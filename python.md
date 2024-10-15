@@ -34,3 +34,10 @@ pyenv local <version> -- automatically select whenever you are in the current di
 pyenv global <version> -- select globally for your user account
 pyenv latest -k <version> -- show latest version
 ```
+
+## venv
+
+```bash
+python -m venv env -- init project
+source env/bin/activate
+```
