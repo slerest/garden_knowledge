@@ -23,3 +23,14 @@ It works by installing a bunch of files in a directory (eg: `env/`), and then mo
 `pyvenv` (not to be confused with [pyenv](https://virtualenv.pypa.io/en/latest/) in the previous section) is a script shipped with Python 3.3 to 3.7. It was **removed** from Python 3.8 as it had problems (not to mention the confusing name). Running `python3 -m venv` has exactly the same effect as pyvenv.
 
 [venv](https://docs.python.org/3/library/venv.html) is a package shipped with Python 3, which you can run using python3 -m venv (although for some reason some distros separate it out into a separate distro package, such as python3-venv on Ubuntu/Debian). It serves the same purpose as virtualenv, but only has a subset of its features (see a comparison [here](https://virtualenv.pypa.io/en/latest/)). `virtualenv` continues to be more popular than `venv`, especially since the former supports both Python 2 and 3.
+
+## pyenv
+
+
+```bash
+pyenv install <version> -- install python version
+pyenv shell <version> -- select just for current shell session
+pyenv local <version> -- automatically select whenever you are in the current directory (or its subdirectories)
+pyenv global <version> -- select globally for your user account
+pyenv latest -k <version> -- show latest version
+```
